@@ -1,0 +1,3 @@
+"customertype","MaxProfit"
+"citizen","110"
+"foriegn","21"
