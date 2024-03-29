@@ -1,30 +1,22 @@
-# Retail Store Modeling And Analysis Using DataStage
+# Retail Store ETL Using DataStage
  
 ## Project Overview:
 
-The project implements a star-schema data warehousing flow, then utilize IBM InfoSphere DataStage to develop efficient ETL (Extract, Transform, Load) pipelines to create data marts and perform some analysis on them.
-
-The objective is to store and analyze data from a fictional retail store in a star-schema-based analysis data warehouse while ensuring all changes in the dimensions are preserved.
+The project focuses on utilizing IBM InfoSphere DataStage to develop efficient ETL (Extract, Transform, Load) pipelines. These pipelines are designed to create data marts and facilitate analysis of data from a fictional retail store. The objective is to ensure all changes in the dimensions are preserved during the ETL process.
 
 ## Data Source:
-
-The data source for populating the star schema.
 
 ![317454551-ef48039a-d9f2-40cd-bd2a-b83067a4131a](https://github.com/omarashrafhamdy/Retail-Store-Modeling-And-Analysis-Using-DataStage/assets/58981064/b5ef596c-18be-4f07-946e-0ba6757b4c12)
 
 ## Project Steps:
 
-**1-Building Data Model:** Building star schema by using three dimensions: ```retail```,```customer```,```product``` and using ```transaction``` fact table.
+**1-Extraction:** Extracting retail,customer,product data from the data warehouse
 
-![Modeling](https://github.com/omarashrafhamdy/Retail-Store-Modeling-And-Analysis-Using-DataStage/assets/58981064/8592bbfa-d63c-4e6e-ab42-49c297f80687)
+**2-Transformation:** Transforming on the data extracted to make customer name upper case
 
-**2-Extraction:** Extracting retail,customer,product data from the data warehouse
+**3-Loading:** load the transformed data to a ```Retail Data Mart```
 
-**3-Transformation:** Transforming on the data extracted to make customer name upper case
-
-**4-Loading:** load the transformed data to a ```Retail Data Mart```
-
-**5-Analysis:** Answering some business need by using Retail Data Mart:
+**4-Analysis:** Answering some business need by using Retail Data Mart:
 
 - Display count of all transaction for each employee for each store
 - Display max profit made by which customer type.Illustrate: customer type “foreign” make 5 transactions, customer type “citizen” makes 3 transactions.So, max profit made by foreign customers.Named DataMart “ACTIVATIONSALES_DATA_MART”
